@@ -67,7 +67,7 @@ jobs:
     steps:
       - name: Get extra parameters for CICD
         run: |
-          echo "GITHUB_REPOSITORY_BASENAME=$(basename ${GITHUB_REPOSITORY} | tr '[:upper:]' '[:lower:]')" | tee -a $GITHUB_ENV
+          echo "GITHUB_REPOSITORY_BASENAME=$(basename ${GITHUB_REPOSITORY} | tee -a $GITHUB_ENV
 
       - name: Update Application Manifest
         uses: p6m-actions/platform-application-manifest-dispatch@v1
