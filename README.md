@@ -84,4 +84,3 @@ Upon each commit to main, the Docker image is built and deployed to the dev Kube
 2. Launch a run of [**Promote Tag**](.github/workflows/promote.yaml) — this will take an existing docker image and promote it to the specified environment. Make sure to enter the Github tag you wish to promote (created by **Cut Release Tag** from step one) and the environment to which you wish to promote the image.
 
 
-
