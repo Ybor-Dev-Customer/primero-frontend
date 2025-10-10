@@ -22,6 +22,6 @@ spec:
   networking:
     ingress:
       enabled: true
-      oidc: true # OAuth2 Proxy is enabled by default
+      oidc: false # OAuth2 Proxy is enabled by default
       path: /
       hostnames: [] # This is set in the patch files per environment
